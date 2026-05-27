@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+nav{
+    padding: 20px;
+    background-color: rgb(50, 49, 49);
+    display: flex;
+    justify-content: center; 
+}
+nav div{
+    background-color: transparent;
+}
+nav div a{
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+    color: rgb(142, 144, 146);
+    cursor: pointer;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+}
+nav div a:hover{
+    color: #40a4df;
+    font-size: 25px;
+    transition: 1s;
+    font-variant: small-caps;
+}
+.my_image{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+    animation: glow 2s infinite;
+}
+@keyframes glow{
+
+    0%{
+        filter: brightness(100%);
+    }
+
+    50%{
+        filter: brightness(150%);
+    }
+
+    100%{
+        filter: brightness(100%);
+    }
+
+}
+.main_body_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main_body_info{
+   color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: justify;
+   padding: 0px 60px 0px 150px;
+   line-height: 30px;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:40px;
+    line-height: 50px;
+    color: rgb(64, 73, 84);
+    animation: open 1.5s ease;
+}
+@keyframes open{
+    from{
+        opacity:0;
+        transform:translateX(-200px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+.yash{
+    color: #40a4df;
+    background-color: transparent;
+}
+.desc{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(132, 132, 127);
+    font-size: 18px;
+    background-color: transparent;
+}
+.role{
+    font-family: 'Outfit', sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+    color:#868686;
+    line-height: 35px;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    transition: 0.2s;
+}
+.role li:hover{
+    transform: translateX(10px);
+    color: #c2cfd6;
+    cursor: pointer;
+}
