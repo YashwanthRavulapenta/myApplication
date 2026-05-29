@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    box-sizing: border-box;
 }
 nav{
     padding: 20px;
@@ -51,8 +52,8 @@ nav div a:hover{
 
 }
 .main_body_section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display:grid;
+    grid-template-columns:1fr 1fr;
 }
 .main_body_info{
    color: antiquewhite;
@@ -61,7 +62,7 @@ nav div a:hover{
    justify-content: center;
    text-align: justify;
    padding: 0px 60px 0px 150px;
-   line-height: 30px;
+   line-height: 30px; 
 }
 .name{
     font-family: Arial, Helvetica, sans-serif;
@@ -100,10 +101,165 @@ nav div a:hover{
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 0.7px;
-    transition: 0.2s;
 }
 .role li:hover{
-    transform: translateX(10px);
-    color: #c2cfd6;
     cursor: pointer;
+    display: inline-block;
+}
+.main_sec_button1{
+    background-color:transparent;
+    padding: 15px;
+    margin:20px;
+    width: 135px;
+    color: azure;
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+}
+.main_sec_button1:hover,.main_sec_button2:hover{
+    font-size: 19px;
+}
+.main_sec_button2{
+    background-color: #40a4df;
+    width: 160px;
+    padding: 15px;
+    border: 1px solid ;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    font-size: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.skills_section{
+    padding:30px;
+    margin-top: 90px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("./skillsImages/skillbackgroundimg.png");
+}
+.skills_headlines{
+    margin: 0px;
+}
+.skills_section_head{
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    color: azure;
+}
+.power{
+    color: #40a4df;
+    background-color: transparent;
+}
+.skills_section_desc{
+     font-family: 'Inter', sans-serif;
+     font-weight: 400;
+     box-sizing: border-box;
+     text-align: center;
+     font-size: 18px;
+     color: azure;
+     letter-spacing: 0.5px;
+}
+.skills_row_one{
+    height: 500pxpx;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 90px;
+    padding: 100px;
+    margin-top: 50px;
+}
+@media(max-width:1500px){
+    .skills_row_one{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media(max-width:1000px){
+    .skills_row_one{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+div , p , h1 , h2 , h3 , img{
+    background-color: transparent;
+}
+.skills_box{
+    padding: 25px;
+    border: 1px solid rgb(49, 48, 48);
+    display: inline-block;
+    border-radius: 12px;
+    width: 100%;
+    height: 430px;
+    color: aqua;
+    box-shadow: 10px 10px 20px rgba(161, 120, 120, 0.3);
+    background-color:rgb(17, 17, 36);
+}
+
+.skill_logo_name_div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+
+}
+.skill_box_logo{
+    padding: 20px;
+    background-color: rgb(9, 26, 24);
+    border-radius: 8px;
+    width:80px;
+    height: 80px;
+}
+.skill_logo_image{
+    background-color: transparent;
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+
+}
+.skill_name_box{
+    padding: 24px 10px 10px;
+    color: aliceblue;
+    font-size: 21px;
+    font-family: 'Inter', sans-serif;
+
+}
+.skill_box_para{
+    color:white;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+    margin-bottom: 25px;
+
+}
+.apps_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+.app_image_name_div{
+    text-align: center;
+}
+.app_image_box{
+    width: 100%;
+    border: 1px solid rgb(56, 55, 55);
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background-color: rgba(29, 30, 41, 0.749);
+}
+.app_image{
+    background-color: transparent;
+}
+.app_name_box{
+    text-align: center;
+}
+.app_name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: antiquewhite;
 }
