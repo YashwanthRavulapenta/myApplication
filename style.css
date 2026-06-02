@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     background-color: black;
     box-sizing: border-box;
 }
+.hero_and_nav_section{
+    background-image: url("./heroback5.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 nav{
     padding: 20px;
-    background-color: rgb(50, 49, 49);
     display: flex;
+    position: sticky;
+    top: 0px;
     justify-content: center; 
-}
-nav div{
     background-color: transparent;
 }
 nav div a{
@@ -19,19 +27,19 @@ nav div a{
     color: rgb(142, 144, 146);
     cursor: pointer;
     margin: 20px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     background-color: transparent;
 }
 nav div a:hover{
     color: #40a4df;
-    font-size: 25px;
-    transition: 1s;
-    font-variant: small-caps;
+    font-size: 26px;
+    transition: 4ms;
+    font-weight: 550;
 }
 .my_image{
     width: 100%;
-    height: 700px;
+    height: 750px;
     object-fit: cover;
     object-position: center;
     animation: glow 2s infinite;
@@ -53,7 +61,9 @@ nav div a:hover{
 }
 .main_body_section{
     display:grid;
+    background-color: transparent   ;
     grid-template-columns:1fr 1fr;
+    padding: auto;
 }
 .main_body_info{
    color: antiquewhite;
@@ -63,13 +73,15 @@ nav div a:hover{
    text-align: justify;
    padding: 0px 60px 0px 150px;
    line-height: 30px; 
+   text-align: center;
 }
 .name{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:45px;
     line-height: 50px;
-    color: rgb(64, 73, 84);
+    color: rgb(101, 110, 121);
     animation: open 1.5s ease;
+    font-weight: 600;
 }
 @keyframes open{
     from{
@@ -89,7 +101,8 @@ nav div a:hover{
 .desc{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(132, 132, 127);
-    font-size: 18px;
+    font-size: 20px;
+    margin-top:20px ;
     background-color: transparent;
 }
 .role{
@@ -110,31 +123,31 @@ nav div a:hover{
     background-color:transparent;
     padding: 15px;
     margin:20px;
-    width: 135px;
+    width: 185px;
     color: azure;
     border: 1px solid whitesmoke;
     border-radius: 7px;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 30px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .main_sec_button1:hover,.main_sec_button2:hover{
     font-size: 19px;
 }
 .main_sec_button2{
     background-color: #40a4df;
-    width: 160px;
+    width: 200px;
     padding: 15px;
     border: 1px solid ;
     color: rgb(0, 0, 0);
     border-radius: 7px;
-    font-size: 18px;
+    font-size: 20px;
     box-sizing: border-box;
     cursor: pointer;
 }
 .skills_section{
     padding:30px;
-    margin-top: 90px;
     width: 100%;
     background-size: cover;
     background-image: url("./skillsImages/skillbackgroundimg.png");
@@ -195,10 +208,13 @@ div , p , h1 , h2 , h3 , img{
     width: 100%;
     height: 430px;
     color: aqua;
-    box-shadow: 10px 10px 20px rgba(161, 120, 120, 0.3);
+    box-shadow: 10px 10px 10px rgba(56, 65, 124, 0.459);
     background-color:rgb(17, 17, 36);
 }
-
+.skills_box:hover{
+    cursor: pointer;
+    zoom: 1.02;
+}
 .skill_logo_name_div{
     margin-top: 20px;
     margin-bottom: 20px;
