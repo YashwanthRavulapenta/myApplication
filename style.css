@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +10,9 @@
     background-image: url("./heroback5.png");
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 nav{
     padding: 20px;
@@ -27,23 +28,22 @@ nav div a{
     color: rgb(142, 144, 146);
     cursor: pointer;
     margin: 20px;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 500;
     background-color: transparent;
 }
 nav div a:hover{
     color: #40a4df;
-    font-size: 26px;
+    font-size: 22px;
     transition: 4ms;
-    font-weight: 550;
+    font-weight: 500;
 }
 .my_image{
     width: 100%;
-    height: 750px;
-    object-fit: cover;
-    object-position: center;
+    height: 100%;
     animation: glow 2s infinite;
 }
+
 @keyframes glow{
 
     0%{
@@ -60,29 +60,63 @@ nav div a:hover{
 
 }
 .main_body_section{
-    display:grid;
-    background-color: transparent   ;
-    grid-template-columns:1fr 1fr;
-    padding: auto;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent  ;
 }
+
 .main_body_info{
    color: antiquewhite;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   text-align: justify;
-   padding: 0px 60px 0px 150px;
-   line-height: 30px; 
-   text-align: center;
+   row-gap: 5px;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   height: 100%;
+   width: 50%;
+}
+.main_body_image_and_name_div{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order:23;
+}
+
+
+
+
+
+.my_name_at_logo{
+    position:absolute;
+    top:70%;
+    left: 40px;
+}
+
+@media screen and (max-width: 399px) {
+    .my_name_at_logo {
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 40px;
+    }
 }
 .name{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:45px;
-    line-height: 50px;
+    font-size:35px;
     color: rgb(101, 110, 121);
     animation: open 1.5s ease;
     font-weight: 600;
 }
+
 @keyframes open{
     from{
         opacity:0;
@@ -101,34 +135,56 @@ nav div a:hover{
 .desc{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(132, 132, 127);
-    font-size: 20px;
-    margin-top:20px ;
+    font-size: 15px;
     background-color: transparent;
 }
-.role{
-    font-family: 'Outfit', sans-serif;
-    margin-top: 20px;
-    margin-left: 50px;
-    color:#868686;
-    line-height: 35px;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 0.7px;
+
+
+@media screen and (max-width:1070px){
+    .name{
+        font-size: 25px;
+    }
+    .desc{
+        font-size: 12px;
+    }
+     
+    
 }
-.role li:hover{
-    cursor: pointer;
-    display: inline-block;
+
+@media screen and (max-width:750px){
+    .name{
+        font-size: 20px;
+    }
+    .desc{
+        font-size: 10px;
+    }
+    
+    
+
+}
+
+@media screen and (max-width:600px){
+    
+    .main_body_image_and_name_div{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .main_body_info{
+        display: none;
+    }
 }
 .main_sec_button1{
     background-color:transparent;
     padding: 15px;
     margin:20px;
-    width: 185px;
+    width: 100px;
     color: azure;
     border: 1px solid whitesmoke;
     border-radius: 7px;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 14px;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -137,18 +193,28 @@ nav div a:hover{
 }
 .main_sec_button2{
     background-color: #40a4df;
-    width: 200px;
+    width: 150px;
     padding: 15px;
     border: 1px solid ;
     color: rgb(0, 0, 0);
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 14px;
     box-sizing: border-box;
     cursor: pointer;
 }
+@media  screen and (max-width:800px) {
+    .main_sec_button1{
+        display: none;
+    }
+    .main_sec_button1,.main_sec_button2{
+        width: 100px;
+        height: 50px;
+    }
+
+}
 .skills_section{
-    padding:30px;
     width: 100%;
+    height: 1000px;
     background-size: cover;
     background-image: url("./skillsImages/skillbackgroundimg.png");
 }
@@ -159,7 +225,7 @@ nav div a:hover{
     font-weight: 700;
     letter-spacing: -1px;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 65px;
+    font-size: 55px;
     text-align: center;
     color: azure;
 }
@@ -177,15 +243,13 @@ nav div a:hover{
      letter-spacing: 0.5px;
 }
 .skills_row_one{
-    height: 500pxpx;
+    height: 200px;
     width: 100%;
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    gap: 90px;
-    padding: 100px;
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-@media(max-width:1500px){
+/* @media(max-width:1500px){
     .skills_row_one{
         grid-template-columns: repeat(2,1fr);
     }
@@ -196,18 +260,21 @@ nav div a:hover{
         grid-template-columns: repeat(1,1fr);
     }
     
-}
+} */
 div , p , h1 , h2 , h3 , img{
     background-color: transparent;
 }
 .skills_box{
-    padding: 25px;
     border: 1px solid rgb(49, 48, 48);
-    display: inline-block;
     border-radius: 12px;
-    width: 100%;
-    height: 430px;
+    width: 300px;
+    height: 400px;
     color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 7px;
     box-shadow: 10px 10px 10px rgba(56, 65, 124, 0.459);
     background-color:rgb(17, 17, 36);
 }
@@ -216,18 +283,21 @@ div , p , h1 , h2 , h3 , img{
     zoom: 1.02;
 }
 .skill_logo_name_div{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 80px 1fr;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 .skill_box_logo{
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(9, 26, 24);
     border-radius: 8px;
-    width:80px;
-    height: 80px;
+    
 }
 .skill_logo_image{
     background-color: transparent;
@@ -239,13 +309,13 @@ div , p , h1 , h2 , h3 , img{
 .skill_name_box{
     padding: 24px 10px 10px;
     color: aliceblue;
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Inter', sans-serif;
 
 }
 .skill_box_para{
     color:white;
-    font-size: 18px;
+    font-size: 14px;
     text-align: left;
     font-family: 'Inter', sans-serif;
     line-height: 25px;
@@ -270,6 +340,8 @@ div , p , h1 , h2 , h3 , img{
 }
 .app_image{
     background-color: transparent;
+    width: 40px;
+    height: 40px;
 }
 .app_name_box{
     text-align: center;
@@ -279,3 +351,236 @@ div , p , h1 , h2 , h3 , img{
     font-weight: 400;
     color: antiquewhite;
 }
+
+.about{
+    margin: 5px;
+    position: relative;
+}
+
+.about_main_section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+.about_image_name_passion_section{
+    display: flex;
+    width: 45%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0px;
+    margin-top: 30px;
+
+}
+.div_name{
+    text-align: center;
+    line-height: 30px;
+
+}
+.div_image{
+    height: 60%;
+    width: 65%;
+}
+.para_backend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.about_section_image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid rgb(70, 70, 255);
+}
+.about_section_my_name{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.about_me_desc_section{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    width: 60%;
+    height: 100vh;
+    gap: 5px;
+}
+.about_me_name{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.about_me_desc_main_head{
+    font-size: 30px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0px;  
+}
+.prob_solv{
+    color: rgb(73, 73, 255);
+}
+.my_desc{
+    display: flex;
+    height: 22%;
+    width: 100%;
+}
+
+.my_desc_image_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    border-radius: 20%;
+    border-right: 1px solid rgb(67, 96, 139); 
+}
+@media screen and (min-width:1000px){
+    .about_me_head{
+    display: none;
+    font-size: 20px;
+    }
+}
+@media screen and (max-width:1100px){
+    .my_desc_image_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid rgb(67, 96, 139);
+    }
+    .div_image{
+    height: 60%;
+    width: 70%;
+}
+}
+@media screen and (max-width:1000px){
+    .my_desc_image_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid rgb(67, 96, 139);
+
+    }
+    .div_image{
+    height: 60%;
+    width: 80%;
+}
+}
+@media screen and (max-width:900px){
+    .about_main_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head_about{
+        display: none;
+    }
+    .my_desc_image_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    height: 100%;
+}
+
+#download_button{
+    display: none;
+}
+.div_image{
+    height: 60%;
+    width: 90%;
+}
+}
+.my_desc_para_div{
+    padding-left:15px ;
+    width: 70%;
+    height: 100%;    
+}
+.my_desc_para_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.about_desc{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    font-family:'Poppins', sans-serif;
+}
+.desc_image{
+    width: 45%;
+    height: 25%;
+}
+.download_resume{
+    border:1px solid white;
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.counter_box{
+    flex-wrap: wrap;
+    position:absolute;
+    top:87%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 250px;
+    padding: 10px;
+    background-color: #060412;
+}
+.count_card{
+    display: flex;
+    border-radius: 13px;
+    width: 200px;
+    height: 100%;
+    border: 2px solid rgba(33, 56, 139, 0.685);
+    flex-direction: column;
+    row-gap: 7px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(26, 30, 61, 0.459);
+
+}
+.counter_image_div{
+    border: 1px solid salmon;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid rgb(37, 50, 109);
+    padding: 31px;
+}
+.count_card_image{
+    width:40px;
+    height: 35px;
+}
+.count{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: rgb(231, 224, 214);
+}
+.count_card_name{
+    color: white;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
