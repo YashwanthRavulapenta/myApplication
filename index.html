@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myWeb</title>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet"
@@ -15,10 +18,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <main class="hero_and_nav_section">
     <nav>
         <div>
-            <a>About</a>
-            <a>Skills</a>
-            <a>Projects</a>
-            <a>Contact</a>
+            <a href="#about_page">About</a>
+            <a href="#skills_page">Skills</a>
+            <a href="#project_page">Projects</a>
+            <a href="#contact_page">Contact</a>
         </div>
     </nav>
     <section class="main_body_section">
@@ -315,8 +318,165 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 -->
 
 
+<main class="main_skills_section" id="skills_page">
+    <section class="skills_section">
+        <div class="skills_headlines">
+            <h1 class="skills_section_head">
+                Skills That 
+                <span class="power">Power</span>
+                My Work
+            </h1>
+            <p class="skills_section_desc">
+                A collection of technologies and tools 
+                I use to build modern,scalable, and efficient 
+                applications
+            </p>
+            <br>
+        </div>
+        <div class="skill_card">
+            <div class="skill_info">
+                <div class="prog_div">
+                    <h1 class="skill_head">Programming Languages</h1>
+                </div>
+                <div>
+                    <p class="skill_desc">
+                        Proficient in Java, C++, Python, and C
+                        for developing efficient, scalable, 
+                        and high-performance applications.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/cpp1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/python.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/java.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/c.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/python.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<section class="about">
+
+        <div class="skill_card" style="display: flex; flex-direction:row-reverse;">
+            <div class="skill_info">
+                <div class="prog_div">
+                    <h1 class="skill_head">Frontend Technologies</h1>
+                </div>
+                <div>
+                    <p class="skill_desc">
+                        Building responsive, interactive, and 
+                        user-friendly interfaces using HTML, CSS, 
+                        JavaScript, and modern web technologies.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/react.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/html.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/js.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/css3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/figma.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill_card">
+            <div class="skill_info">
+                <div class="prog_div">
+                    <h1 class="skill_head">Backend Technologies</h1>
+                </div>
+                <div>
+                    <p class="skill_desc">
+                        Developing secure and scalable server-side applications,
+                         APIs, 
+                        and business logic to power modern web systems.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/nestjs.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/postgres.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/springboot.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/mysql.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/postgres.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="skill_card" style="display: flex; flex-direction:row-reverse;">
+            <div class="skill_info">
+                <div class="prog_div">
+                    <h1 class="skill_head">Other/Tools</h1>
+                </div>
+                <div>
+                    <p class="skill_desc">
+                        Utilizing Git, GitHub, VS Code and 
+                        industry-standard tools
+                         to streamline development and collaboration.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/vscode.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/github.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/leetcode.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/vscode.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./skillsImages/c.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</main>
+
+
+<section class="about" id="about_page">
     <div class="about_me_head">
         <h1 class="about_me_name">About Me</h1>
     </div>
@@ -438,6 +598,43 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 </section>
 
 
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+const swiper = new Swiper(".mySwiper",{
+
+    effect:"coverflow",
+
+    centeredSlides:true,
+
+    slidesPerView:3,
+
+    loop:true,
+
+    autoplay:{
+        delay:1000,
+        disableOnInteraction:false
+    },
+
+    coverflowEffect:{
+        rotate:20,
+        stretch:0,
+        depth:150,
+        modifier:1,
+        slideShadows:false,
+        scale:0.8
+    }
+
+});
+
+</script>
 
 </body>
 </html>
