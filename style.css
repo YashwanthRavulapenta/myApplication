@@ -913,12 +913,10 @@ div , p , h1 , h2 , h3 , img{
     grid-template-columns: 2fr 10fr;
     grid-gap: 2px;
     backdrop-filter:blur(10px);
-    transition: width 0.5s , height 0.5s;
+    transition: transform 0.5s;
 }
 .each_contact_div:hover{
-    width: 70%;
-    height: 65px;
-
+    transform: scaleY(3);
 }
 .socio_image{
     height: 35px;
