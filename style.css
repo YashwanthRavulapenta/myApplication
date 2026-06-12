@@ -44,10 +44,10 @@ nav div a:hover{
 .my_image{
     width: 100%;
     height: 100%;
-    animation: glow 2s infinite;
+    animation: glowing 2s infinite;
 }
 
-@keyframes glow{
+@keyframes glowing{
 
     0%{
         filter: brightness(100%);
@@ -391,8 +391,32 @@ div , p , h1 , h2 , h3 , img{
     justify-content: center;
     row-gap: 0px;
     margin-top: 30px;
+    position: relative;
 
 }
+.active{
+    position: absolute;
+    left: 350px;
+    top: 310px;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    animation: glow 0.8s infinite 0.4s alternate ease-in;
+}
+@media screen and (max-width:1275px) {
+    .active{
+        display: none;
+    }
+}
+@keyframes glow{
+    from{
+        background-color:rgb(25, 52, 255);
+    }
+    to{
+        background-color: rgb(206, 235, 249);
+    }
+}
+
 .div_name{
     text-align: center;
     line-height: 30px;
