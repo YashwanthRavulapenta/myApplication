@@ -124,20 +124,20 @@ nav div a:hover{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:35px;
     color: rgb(101, 110, 121);
-    animation:open 1.5s ease forwards;
+    animation:open 1.2s ease forwards;
     font-weight: 600;
+    opacity: 0;
 }
 
 @keyframes open{
     from{
         opacity:0;
-        transform: ;
-        transform:skewX(-20deg);
+        transform: translateX(200px);
     }
 
     to{
         opacity:1;
-        transform:skewX(20deg);
+        transform: translateX(0px);
     }
 }
 .yash{
@@ -558,14 +558,18 @@ div , p , h1 , h2 , h3 , img{
 .skill_card{
     height: 25%;
     width: 100%;
-    border: 1px solid rgb(81, 81, 119);
+    border: 1px solid rgb(29, 29, 64);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     border-radius: 20px;
     padding: 20px;
-    transition: width 0.7s , border-radius 0.5s ,border-left-color 2s;
+    transition: border 0.8s , box-shadow 0.7s ;
+}
+.skill_card:hover{
+    box-shadow: 0 0 8px rgba(78, 199, 255, 0.5);
+    border: 1px solid rgb(21, 243, 255);
 }
 
 .skill_info{
@@ -588,13 +592,6 @@ div , p , h1 , h2 , h3 , img{
     font-size: 16px;
     line-height: 1.8;
     color: rgb(180,180,180);
-}
-.skill_card:hover{
-    cursor: pointer;
-    background-color: rgb(15, 13, 32);
-    width: 97%;
-    border-radius: 20px;
-    border-width: 2px;
 }
 
 .skills_section_head{
@@ -918,16 +915,17 @@ div , p , h1 , h2 , h3 , img{
     align-items: center;
     text-align: center;
     color: rgb(243, 243, 243);
-    border-bottom: 1px solid rgb(47, 207, 255);
+    border-bottom: 1px solid rgb(18, 33, 38);
 }
 .projects_heading{
     font-family: Arial, Helvetica, sans-serif;
-    color: #2211a9;
+    color: #3522c6;
     font-weight: 700;
     font-size: 45px;
 }
 .projects_desc{
     font-size: 15px;
+    color: #a59e9e  ;
 }
 .carousel_div{
     display: flex;
@@ -954,10 +952,10 @@ div , p , h1 , h2 , h3 , img{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    transition: border 0.6s , box-shadow 0.5s ;
+    transition: border 0.8s , box-shadow 0.7s ;
 }
 .each_project_card:hover{
-    box-shadow: 0 0 8px rgba(78, 199, 255, 0.5);
+    box-shadow: 0 0 6px rgba(78, 199, 255, 0.5);
     border: 1px solid rgb(21, 243, 255);
 }
 .project_card_image_box{
