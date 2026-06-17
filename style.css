@@ -124,19 +124,20 @@ nav div a:hover{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:35px;
     color: rgb(101, 110, 121);
-    animation: open 1.5s ease;
+    animation:open 1.5s ease forwards;
     font-weight: 600;
 }
 
 @keyframes open{
     from{
         opacity:0;
-        transform:translateX(-200px);
+        transform: ;
+        transform:skewX(-20deg);
     }
 
     to{
         opacity:1;
-        transform:translateX(0);
+        transform:skewX(20deg);
     }
 }
 .yash{
@@ -224,163 +225,19 @@ nav div a:hover{
 div , p , h1 , h2 , h3 , img{
     background-color: transparent;
 }
-/* .skills_section{
-    width: 100%;
-    height: 1000px;
-    background-size: cover;
-    background-image: url("./skillsImages/skillbackgroundimg.png");
-}
-.skills_headlines{
-    margin: 0px;
-}
-.skills_section_head{
-    font-weight: 700;
-    letter-spacing: -1px;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 55px;
-    text-align: center;
-    color: azure;
-}
-.power{
-    color: #40a4df;
-    background-color: transparent;
-}
-.skills_section_desc{
-     font-family: 'Inter', sans-serif;
-     font-weight: 400;
-     box-sizing: border-box;
-     text-align: center;
-     font-size: 18px;
-     color: azure;
-     letter-spacing: 0.5px;
-}
-.skills_row_one{
-    height: 200px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-@media(max-width:1500px){
-    .skills_row_one{
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-}
-@media(max-width:1000px){
-    .skills_row_one{
-        grid-template-columns: repeat(1,1fr);
-    }
-    
-} 
-div , p , h1 , h2 , h3 , img{
-    background-color: transparent;
-}
-.skills_box{
-    border: 1px solid rgb(49, 48, 48);
-    border-radius: 12px;
-    width: 300px;
-    height: 400px;
-    color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 7px;
-    box-shadow: 10px 10px 10px rgba(56, 65, 124, 0.459);
-    background-color:rgb(17, 17, 36);
-}
-.skills_box:hover{
-    cursor: pointer;
-    zoom: 1.02;
-}
-.skill_logo_name_div{
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    
-
-}
-.skill_box_logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(9, 26, 24);
-    border-radius: 8px;
-    
-}
-.skill_logo_image{
-    background-color: transparent;
-    display: inline-block;
-    object-fit: cover;
-    object-position: center;
-
-}
-.skill_name_box{
-    padding: 24px 10px 10px;
-    color: aliceblue;
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-
-}
-.skill_box_para{
-    color:white;
-    font-size: 14px;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    line-height: 25px;
-    margin-bottom: 25px;
-
-}
-.apps_div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
-}
-.app_image_name_div{
-    text-align: center;
-}
-.app_image_box{
-    width: 100%;
-    border: 1px solid rgb(56, 55, 55);
-    padding: 10px;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    background-color: rgba(29, 30, 41, 0.749);
-}
-.app_image{
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-}
-.app_name_box{
-    text-align: center;
-}
-.app_name{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: antiquewhite;
-} */
-
 
 
 .about{
-    margin-bottom: 70px;
     position: relative;
     width: 100%;
-    height: auto;
-    border-top: 1px solid rgb(47, 87, 110);
-    
+    height: auto;    
 }
 
 .about_main_section{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    margin-top: 30px;
+    height: auto;
 }
 .about_image_name_passion_section{
     display: flex;
@@ -596,8 +453,9 @@ div , p , h1 , h2 , h3 , img{
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 250px;
+    height: auto;
     padding: 10px;
+    z-index: 20;
     background-color: #050313;
 }
 .count_card{
@@ -605,9 +463,10 @@ div , p , h1 , h2 , h3 , img{
     border-radius: 13px;
     width: 200px;
     height: 100%;
+    padding: 10px;
     border: 2px solid rgba(33, 56, 139, 0.685);
     flex-direction: column;
-    row-gap: 7px;
+    row-gap: 5px;
     justify-content: center;
     align-items: center;
     transition: width 0.6s ease-in , border-color 0.5s ease-in;
@@ -677,11 +536,10 @@ div , p , h1 , h2 , h3 , img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 900px;
+    height: auto;
     width: 100%;
     padding-top:20px ;
-    margin-bottom: 100px;
-    border-top: 1px solid rgb(40, 91, 95);
+    padding-bottom: 40px;
 }
 .skills_section{
     height: 100%;
@@ -736,7 +594,6 @@ div , p , h1 , h2 , h3 , img{
     background-color: rgb(15, 13, 32);
     width: 97%;
     border-radius: 20px;
-    border-left-color: rgb(91, 244, 223);
     border-width: 2px;
 }
 
@@ -875,16 +732,20 @@ div , p , h1 , h2 , h3 , img{
 
 .contact_section{
     background-image: url("./yashcontact3.png");
-    margin-top: 170px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height:auto;
     opacity: 0.7;
+    margin-top: 180px;
     background-size: cover;
     background-position: right center;
 }
-
+@media screen and (max-width:500px) {
+    .contact_section{
+        margin-top: 290px;
+    }
+}
 .head_div{
     width: 400px;
     height: 60px;
@@ -940,7 +801,8 @@ div , p , h1 , h2 , h3 , img{
     transition: transform 0.5s;
 }
 .each_contact_div:hover{
-    transform: scaleY(3);
+    transform: scaleY(1.1);
+    cursor: pointer;
 }
 .socio_image{
     height: 35px;
@@ -989,7 +851,7 @@ div , p , h1 , h2 , h3 , img{
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
     color: rgb(8, 0, 156);
-    box-shadow: rgba(0, 0, 231, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 231, 0.25) 0px 10px ;
 }
 .info_div{
     display: flex;
@@ -1033,99 +895,42 @@ div , p , h1 , h2 , h3 , img{
 
 
 
-
-
-/* .contact_section{
-    width:100%;
-    min-height:100vh;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)
-    ),
-    url("./yashcontact3.png");
-
-    background-size: cover;
-    background-position: right center;
-    background-repeat: no-repeat;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+.projects_section{
+    width: 100%;
+    height: 700px;
+    border: 1px solid springgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.projects_div1{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    border-bottom: 1px solid rgb(47, 207, 255);
+}
+.projects_heading{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2211a9;
+    font-weight: 700;
+}
+.projects_desc{
+    font-size: 14px;
+    
+}
+.carousel_div{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    max-width: 95%;
+    height: 500px;
+    border: 1px solid springgreen;
 }
 
-.contact_section_sub{
-    padding:80px 8%;
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-    max-width:600px;
-}
 
-.contact_heading{
-    font-size:50px;
-    color:#00d9ff;
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-}
-
-.contact_para{
-    color:white;
-    font-size:18px;
-    line-height:1.8;
-    max-width:500px;
-}
-
-.contact_div{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    width:100%;
-    max-width:400px;
-}
-
-.each_contact_div{
-    display:flex;
-    align-items:center;
-    gap:20px;
-
-    padding:15px 20px;
-
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(10px);
-
-    border:1px solid rgba(0,217,255,0.2);
-    border-radius:15px;
-
-    transition:0.4s;
-}
-
-.each_contact_div:hover{
-    transform:translateX(8px);
-    border-color:#00d9ff;
-    box-shadow:0 0 20px rgba(0,217,255,0.3);
-}
-
-.socio_image{
-    width:40px;
-    height:40px;
-}
-
-.socio_name{
-    color:white;
-    font-size:20px;
-    font-family:'Poppins',sans-serif;
-}
-
-.footer_section{
-    height:60px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    color:white;
-    background:#07113d;
-    font-size:15px;
-} */
