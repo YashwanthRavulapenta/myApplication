@@ -896,13 +896,18 @@ div , p , h1 , h2 , h3 , img{
 
 
 .projects_section{
+    padding-top: 30px;
+    padding-bottom: 100px;
     width: 100%;
-    height: 700px;
-    border: 1px solid springgreen;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 40px;
+    background-image: url("./projectsImages/bgImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .projects_div1{
     width: 100%;
@@ -919,10 +924,10 @@ div , p , h1 , h2 , h3 , img{
     font-family: Arial, Helvetica, sans-serif;
     color: #2211a9;
     font-weight: 700;
+    font-size: 45px;
 }
 .projects_desc{
-    font-size: 14px;
-    
+    font-size: 15px;
 }
 .carousel_div{
     display: flex;
@@ -932,5 +937,92 @@ div , p , h1 , h2 , h3 , img{
     height: 500px;
     border: 1px solid springgreen;
 }
-
-
+.projects_div2{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.each_project_card{
+    width: 300px;
+    height: 400px;
+    border: 1px solid rgb(42, 33, 92);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: border 0.6s , box-shadow 0.5s ;
+}
+.each_project_card:hover{
+    box-shadow: 0 0 8px rgba(78, 199, 255, 0.5);
+    border: 1px solid rgb(21, 243, 255);
+}
+.project_card_image_box{
+    width: 100%;
+    height: 48%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.project_image{
+    width: 100%;
+    height: auto;
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.project_card_desc_box{
+    width: 100%;
+    height: 35%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-bottom: 1px solid rgb(29, 29, 53);
+}
+.project_name{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.project_desc{
+    font-size: 14px;
+    color: #8e8484;
+}
+.project_card_skills_box{
+    display: flex;
+    gap: 10px;
+}
+.project_card_buttons_box{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.project_card_each_skill_button{
+    border: 1px solid blue;
+    color: blue;
+    font-size: 10px;
+    padding: 3px 7px 2px 7px;
+    border-radius: 3px;
+    background-color: transparent;
+}
+.project_card_button1{
+    color: #bebaec;
+    background-color: transparent;
+    border: 1px solid rgb(157, 157, 227);
+    padding: 5px 10px 7px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.project_card_button2{
+    color: #148727;
+    background-color: transparent;
+    border: 1px solid rgb(26, 149, 34);
+    padding: 5px 15px 6px 15px;
+    font-size: 16px;
+    border-radius: 6px;    
+}
