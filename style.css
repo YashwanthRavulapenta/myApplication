@@ -600,15 +600,6 @@ linear-gradient(
     position: relative;
 
 }
-.active{
-    position: absolute;
-    left: 350px;
-    top: 310px;
-    height: 27px;
-    width: 27px;
-    border-radius: 50%;
-    animation: glow 0.8s infinite 0.4s alternate ease-in;
-}
 @media screen and (max-width:1275px) {
     .active{
         display: none;
