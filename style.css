@@ -605,6 +605,9 @@ linear-gradient(
         display: none;
     }
 }
+.hrrrr{
+    color: #023be5;
+}
 @keyframes glow{
     from{
         background-color:rgb(25, 52, 255);
