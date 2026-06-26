@@ -39,16 +39,16 @@ nav div a{
 }
 .nav_links{
     position: absolute;
-    top: -320px;
-    z-index: 9999;
-    width: 90%;
+    top: -20px;
+    width: 80%;
     border-radius: 50%;
-    height: 400px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border: 2px solid rgb(0, 174, 255);
+    border-bottom: 4px solid rgb(72, 92, 108);
 }
+
 nav div a:hover{
     color: #40a4df;
     font-size: 22px;
@@ -240,9 +240,133 @@ nav div a:hover{
 div , p , h1 , h2 , h3 , img{
     background-color: transparent;
 }
+.hero_section_image_box{
+    position: relative;
+}
+.hero_section_style_box1{
+    position: absolute;
+    top: 385px;
+    left: 180px;
+    width: 31px;
+    height: 40px;
+    opacity: 0;
+    background-color: #3e86c08c;
+    animation: moveHeight 1.7s forwards infinite alternate;
+}
 
+@keyframes moveHeight {
+    from{
+        opacity: 0;
+        height: 0px;
+    }to{
+        opacity: 1;
+        height: 37px;
+    }
+}
+.hero_section_style_box2{
+    position: absolute;
+    top: 409px;
+    left: 270px;
+    width: 40px;
+    height: 19px;
+    opacity: 0;
+    background-color: #3e86c08c;
+    animation: moveCross1 1.7s forwards infinite alternate;
+}
+@keyframes moveCross1 {
+    from{
+        opacity: 0;
+        transform: skewX(-33deg);
+        height: 0px;
+    }to{
+        opacity: 1;
+        transform: skewX(-33deg);
+        height: 19px;
+    }
+}
+.hero_section_style_box3{
+    position: absolute;
+    top: 411px;
+    left: 326px;
+    width: 23px;
+    height: 18px;
+    background-color: rgba(101, 110, 121, 0.623);
+    animation: moveCross2 1.7s forwards infinite alternate;
 
-
+}
+@keyframes moveCross2 {
+    from{
+        opacity: 0;
+        transform: skewX(-34deg);
+        height: 0px;
+    }to{
+        opacity: 1;
+        transform: skewX(-34deg);
+        height: 19px;
+    }
+}
+@media screen and (max-width:500px) {
+    .hero_section_style_box1{
+        position: absolute;
+        top: 243px;
+        left: 114px;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        background-color: #3e86c08c;
+        animation: moveHeight 1.5s forwards infinite alternate;
+    }
+    @keyframes moveHeight {
+        from{
+            opacity: 0;
+            height: 0px;
+        }to{
+            opacity: 1;
+            height: 22px;
+        }
+    }
+    .hero_section_style_box2{
+        position: absolute;
+        top: 259px;
+        left: 171px;
+        width: 25px;
+        height: 9px;
+        opacity: 0;
+        background-color: #3e86c08c;
+        animation: moveCross2 1.5s forwards infinite alternate;
+    }
+    @keyframes moveCross2 {
+        from{
+            opacity: 0;
+            transform: skewX(-34deg);
+            height: 0px;
+        }to{
+            opacity: 1;
+            transform: skewX(-34deg);
+            height: 9px;
+        }
+    }
+    .hero_section_style_box3{
+        position: absolute;
+        top: 260px;
+        left: 207px;
+        width: 15px;
+        height: 9px;
+        background-color: rgba(101, 110, 121, 0.623);
+        animation: moveCross2 1.5s forwards infinite alternate;
+    }
+    @keyframes moveCross2 {
+        from{
+            opacity: 0;
+            transform: skewX(-34deg);
+            height: 0px;
+        }to{
+            opacity: 1;
+            transform: skewX(-34deg);
+            height: 9px;
+        }
+    }
+}
 
 /* skills Section */
 .main_skills_section{
