@@ -10,6 +10,7 @@ html{
     box-sizing: border-box;
 }
 .hero_and_nav_section{
+    position: relative;
     background-image: url("./Bgimages/heroback5.png");
     background-size: cover;
     width: 100%;
@@ -34,11 +35,23 @@ nav div a{
     font-size: 19px;
     font-weight: 500;
     background-color: transparent;
+    transition: font-size 0.3s , font-weight 0.3s;
+}
+.nav_links{
+    position: absolute;
+    top: -320px;
+    z-index: 9999;
+    width: 90%;
+    border-radius: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid rgb(0, 174, 255);
 }
 nav div a:hover{
     color: #40a4df;
     font-size: 22px;
-    transition: 4ms;
     font-weight: 500;
 }
 .my_image{
@@ -77,7 +90,6 @@ nav div a:hover{
    color: antiquewhite;
    display: flex;
    flex-direction: column;
-   row-gap: 5px;
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
@@ -186,10 +198,12 @@ nav div a:hover{
 }
 
 .main_sec_button1{
+    transition: font-size 0.2s;
     background-color:transparent;
-    padding: 15px;
+    padding: 9px 15px 9px 15px;
     margin:20px;
     width: 100px;
+    height: auto;
     color: azure;
     border: 1px solid whitesmoke;
     border-radius: 7px;
@@ -202,9 +216,10 @@ nav div a:hover{
     font-size: 15px;
 }
 .main_sec_button2{
+    transition: font-size 0.2s;
     background-color: #40a4df;
     width: 150px;
-    padding: 15px;
+    padding: 9px 16px 9px 16px;
     border: 1px solid ;
     color: rgb(0, 0, 0);
     border-radius: 7px;
