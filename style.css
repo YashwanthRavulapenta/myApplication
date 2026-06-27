@@ -356,7 +356,7 @@ div , p , h1 , h2 , h3 , img{
     height: 19px;
     opacity: 0;
     background-color: #3e86c08c;
-    animation: moveCross1 1.7s forwards infinite alternate;
+    animation: moveCross1 1.7s forwards alternate;
 }
 @keyframes moveCross1 {
     from{
@@ -376,7 +376,7 @@ div , p , h1 , h2 , h3 , img{
     width: 23px;
     height: 18px;
     background-color: rgba(101, 110, 121, 0.623);
-    animation: moveCross2 1.7s forwards infinite alternate;
+    animation: moveCross2 1.7s forwards  alternate;
 
 }
 @keyframes moveCross2 {
@@ -702,7 +702,8 @@ div , p , h1 , h2 , h3 , img{
     width: 300px;
     height: 400px;
     border: 1px solid rgb(42, 33, 92);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -829,9 +830,7 @@ linear-gradient(
         display: none;
     }
 }
-.hrrrr{
-    color: #023be5;
-}
+
 @keyframes glow{
     from{
         background-color:rgb(25, 52, 255);
