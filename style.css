@@ -68,7 +68,7 @@ nav{
     transition: color 0.4s;
 }
 .my_image{
-    width: 100%;
+    width: 600px;
     height: 100%;
     animation: glowing 2s infinite;
 }
@@ -174,7 +174,7 @@ nav{
         display: block;
         position: absolute;
         line-height: 40px;
-        top: 300px;
+        top: 400px;
         left: auto;
     }
     .new_para{
@@ -341,9 +341,9 @@ div , p , h1 , h2 , h3 , img{
 }
 .hero_section_style_box1{
     position: absolute;
-    top: 385px;
-    left: 180px;
-    width: 31px;
+    top: 365px;
+    left: 171px;
+    width: 30px;
     height: 40px;
     opacity: 0;
     background-color: #3e86c08c;
@@ -361,9 +361,9 @@ div , p , h1 , h2 , h3 , img{
 }
 .hero_section_style_box2{
     position: absolute;
-    top: 409px;
-    left: 270px;
-    width: 40px;
+    top: 388px;
+    left: 253px;
+    width: 39px;
     height: 19px;
     opacity: 0;
     background-color: #3e86c08c;
@@ -382,9 +382,9 @@ div , p , h1 , h2 , h3 , img{
 }
 .hero_section_style_box3{
     position: absolute;
-    top: 411px;
-    left: 326px;
-    width: 23px;
+    top: 389px;
+    left: 309px;
+    width: 22px;
     height: 18px;
     background-color: rgba(101, 110, 121, 0.623);
     animation: moveCross2 1.7s forwards  alternate;
@@ -398,7 +398,18 @@ div , p , h1 , h2 , h3 , img{
     }to{
         opacity: 1;
         transform: skewX(-34deg);
-        height: 19px;
+        height: 18px;
+    }
+}
+@media screen and (max-width:500px){
+    .hero_section_style_box1{
+        display: none;
+    }
+    .hero_section_style_box2{
+        display: none;
+    }
+    .hero_section_style_box3{
+        display: none;
     }
 }
 /* @media screen and (max-width:500px) {
