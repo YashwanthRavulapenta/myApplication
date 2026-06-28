@@ -1178,7 +1178,7 @@ linear-gradient(
     height: auto;
 }
 .e_p_l_icon_box{
-    color: #304fe7;
+    color: rgb(64, 64, 255);
     border-radius: 5px;
     border: 1px solid rgb(27, 33, 52);
     width: 45px;
@@ -1200,7 +1200,7 @@ linear-gradient(
 }
 .e_p_l_name{
     font-size: 14px;
-    color: #1200dc;
+    color: rgb(64, 64, 255);
     margin-bottom: 0;
 }
 .e_p_l_info{
@@ -1275,7 +1275,7 @@ linear-gradient(
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    border: 1px solid rgb(14, 14, 77);
+    border: 1px solid rgb(107, 107, 121);
     border-radius: 20px;
     transition: box-shadow 0.6s;
 }
@@ -1285,7 +1285,7 @@ linear-gradient(
 
 .message_heading{
     font-size: 20px;
-    color: #3624ff;
+    color: rgb(64, 64, 255);
 }
 .message_head_div{
     display: flex;
@@ -1294,7 +1294,7 @@ linear-gradient(
 .message_icon{
     font-size: 18px;
     font-weight: 900;
-    color: #1200dc;
+    color: rgb(64, 64, 255);
     background: transparent;
 }
 .name_email_feild_box{
@@ -1307,7 +1307,7 @@ linear-gradient(
 }
 .message_input_name_feild{
     width: 175px;
-    border: 1px solid rgb(37, 37, 78);
+    border: 1px solid rgb(110, 110, 118);
     border-radius: 6px;
     height: 34px;
     font-size: 12px;
@@ -1324,7 +1324,7 @@ linear-gradient(
     border-radius: 7px;
     color: #32affc;
     background-color: transparent;
-    border: 1px solid rgb(31, 31, 65);
+    border: 1px solid rgb(113, 113, 125);
 }
 .send_message_button{
     width: 100%;
@@ -1335,7 +1335,7 @@ linear-gradient(
     border: 1px solid rgb(31, 31, 103);
 }
 .message_line_style{
-    color: #023be5;
+    color: #666971;
     margin: 0;
     animation: messageLineMove 0.5s 0.2s forwards;
 }
