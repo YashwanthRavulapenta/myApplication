@@ -261,7 +261,8 @@ nav{
 @media screen and (max-width:600px){
     
     .main_body_image_and_name_div{
-        width: 400px;
+        border: 1px solid springgreen;
+        width:100%;
         height: auto;
         object-fit: cover;
         object-position: center;
@@ -404,8 +405,8 @@ div , p , h1 , h2 , h3 , img{
 @media screen and (max-width:500px) {
     .hero_section_style_box1{
         position: absolute;
-        top: 243px;
-        left: 114px;
+        top: 260px;
+        left: 122px;
         width: 20px;
         height: 20px;
         opacity: 0;
@@ -423,9 +424,9 @@ div , p , h1 , h2 , h3 , img{
     }
     .hero_section_style_box2{
         position: absolute;
-        top: 259px;
-        left: 171px;
-        width: 25px;
+        top: 277px;
+        left: 184px;
+        width: 26px;
         height: 9px;
         opacity: 0;
         background-color: #3e86c08c;
@@ -444,8 +445,8 @@ div , p , h1 , h2 , h3 , img{
     }
     .hero_section_style_box3{
         position: absolute;
-        top: 260px;
-        left: 207px;
+        top: 277px;
+        left: 222px;
         width: 15px;
         height: 9px;
         background-color: rgba(101, 110, 121, 0.623);
