@@ -997,8 +997,8 @@ linear-gradient(
 }
 }
 .desc_image{
-    width: 45%;
-    height: 25%;
+    width: 30px;
+    height: auto;
 
 }
 .download_resume{
