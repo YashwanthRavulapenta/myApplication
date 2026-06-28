@@ -401,7 +401,7 @@ div , p , h1 , h2 , h3 , img{
         height: 19px;
     }
 }
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
     .hero_section_style_box1{
         position: absolute;
         top: 258px;
@@ -462,7 +462,7 @@ div , p , h1 , h2 , h3 , img{
             height: 8px;
         }
     }
-}
+} */
 
 /* skills Section */
 .main_skills_section{
