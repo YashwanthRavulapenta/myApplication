@@ -346,7 +346,7 @@ div , p , h1 , h2 , h3 , img{
     width: 30px;
     height: 40px;
     opacity: 0;
-    background-color: #3e86c08c;
+    background-color: #40a4df;
     animation: moveHeight 1.7s forwards  ;
 }
 
@@ -366,7 +366,7 @@ div , p , h1 , h2 , h3 , img{
     width: 39px;
     height: 19px;
     opacity: 0;
-    background-color: #3e86c08c;
+    background-color: #40a4df;
     animation: moveCross1 1.7s forwards alternate;
 }
 @keyframes moveCross1 {
@@ -386,7 +386,7 @@ div , p , h1 , h2 , h3 , img{
     left: 309px;
     width: 22px;
     height: 18px;
-    background-color: rgba(101, 110, 121, 0.623);
+    background-color: rgb(51, 61, 74);
     animation: moveCross2 1.7s forwards  alternate;
 
 }
